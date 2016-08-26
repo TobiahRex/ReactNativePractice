@@ -11,15 +11,43 @@
   * User can select Avatar voice.
   * User can select 8bit Avatar user icon.  
 + Setup chat rooms based on Category.
-  * User can choose up to 2 saved categories.  
+  * User can choose up to 2 saved categories.  (4 total)
+    - Sports
+    - Science & Tech
+    - Gossip
+    - Road-Rage
 + TRANSMIT - Voice to text.
   * User says *'New Message'*.  
-    * Relays message.
+    - Relays message.
   * Users says *'Finished.'*
-    * RaptoChat says *'I will say...[message]... should I send?'*
-    * User says *'Yes'* or *'No'*
+    - RaptoChat says *'I will say...[message]... should I send?'*
+    - User says *'Yes'* or *'No'*
       * If *'Yes'* - Send message.
       * If *'No'* - RaptoChat says *'try again?'*
-        * User says *'Yes'* - *'Ok, I'm listening.'*
-        * User says *'No'* - *'Alright. Ill be here if you change your mind.'*
+        - User says *'Yes'* - *'Ok, I'm listening.'*
+        - User says *'No'* - *'Alright. Ill be here if you change your mind.'*
 + RECEIVE - Text to voice.
+  * Each new chat in the public channel conveys respective voice, in order of transmission.
++ 40 Dummy users each with array of 10 general messages that fire at random intervals.
+
+### Extra Features 1:
++ Private chat.
+
+### Extra Features 2:
++ Voice commands for...
+  1. Registration process.
+  2. Changing room category.
+
+### Monetization Options:
++ Signup to become voice Narrator
+
+  * Because TTS is computationally interpreted, subtle social cues will not be
+  interpreted reliably or accurately, at all times.  To provide a more accurate
+  representation of users desired intent, intonation, meaning, or idiomatic
+  expression, users can re-interpret the conversation.  The actual users can
+  rate the interpretation and based on the rating, the interpreter can receive a
+  compensation reflected by their rating.
+
+  * Users who are in the middle of an avatar interpreted chat, can request for
+  live interpretation, and narrators who are on stand-by will be assigned to
+  their conversation.  Think, Uber for conversation.
