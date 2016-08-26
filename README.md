@@ -51,6 +51,3 @@
   * Users who are in the middle of an avatar interpreted chat, can request for
   live interpretation, and narrators who are on stand-by will be assigned to
   their conversation.  Think, Uber for conversation.
-
-#### Technologies
-<img src="https://cdn.auth0.com/blog/react-js/react.png" style="{width: 200px;}" />
