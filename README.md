@@ -53,4 +53,4 @@
   their conversation.  Think, Uber for conversation.
 
 #### Technologies
-![React](https://cdn.auth0.com/blog/react-js/react.png =200x)
+![React](https://cdn.auth0.com/blog/react-js/react.png)
