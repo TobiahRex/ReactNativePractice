@@ -18,8 +18,8 @@
   * Users says *'Finished.'*
     * RaptoChat says *'I will say...[message]... should I send?'*
     * User says *'Yes'* or *'No'*
-    * If *'Yes'* - Send message.
-    * If *'No'* - RaptoChat says *'try again?'*
-      * User says *'Yes'* - *'Ok, I'm listening.'*
-      * User says *'No'* - *'Alright. Ill be here if you change your mind.'*
+      * If *'Yes'* - Send message.
+      * If *'No'* - RaptoChat says *'try again?'*
+        * User says *'Yes'* - *'Ok, I'm listening.'*
+        * User says *'No'* - *'Alright. Ill be here if you change your mind.'*
 + RECEIVE - Text to voice.
