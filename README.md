@@ -38,7 +38,7 @@
   1. Registration process.
   2. Changing room category.
 
-### Monetization Options:
+### Monetization Possibilities:
 + Signup to become voice Narrator
 
   * Because TTS is computationally interpreted, subtle social cues will not be
@@ -46,7 +46,7 @@
   representation of users desired intent, intonation, meaning, or idiomatic
   expression, users can re-interpret the conversation.  The actual users can
   rate the interpretation and based on the rating, the interpreter can receive a
-  compensation reflected by their rating.
+  compensation reflecting rating.
 
   * Users who are in the middle of an avatar interpreted chat, can request for
   live interpretation, and narrators who are on stand-by will be assigned to
