@@ -1,5 +1,4 @@
 #  RaptoChat
-
 ## React-Native Geolocation Chat App.
 #### *RaptoChat connects you to the drivers in your immediate vicinity for a fun, hands free, Text to Speech chat experience.*
 
