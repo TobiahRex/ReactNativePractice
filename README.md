@@ -1,5 +1,5 @@
 #  RaptoChat
-[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](http://standardjs.com/)
+[![Airbnb](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](http://standardjs.com/)
 
 ## React-Native Geolocation Chat App.
 #### *RaptoChat connects you to the drivers in your immediate vicinity for a fun, hands free, Text to Speech chat experience.*
@@ -51,3 +51,6 @@
   * Users who are in the middle of an avatar interpreted chat, can request for
   live interpretation, and narrators who are on stand-by will be assigned to
   their conversation.  Think, Uber for conversation.
+
+#### Technologies
+![React](https://cdn.auth0.com/blog/react-js/react.png "React.js")
