@@ -23,8 +23,10 @@ import React from 'react';
 import Firebase from 'firebase';
 import { Card List } from 'material-ui';
 import { Text } from 'react-native';
+import trim from 'trim';
 
 import Message from './Message.jsx';
+let firebaseRef = new Firebase('http://raptochat.firebaseio.com');
 
 class MessageList extends React.Component {
 
@@ -32,21 +34,67 @@ class MessageList extends React.Component {
     super(props, context);
 
     this.state = {
-      message : [
-        'Hello there, how are you?',
-        'This is so much fun!',
-      ]
+      messages : {} // Firebase will convert Objects with unique key's into an array by default.
     };
+    this.onChange = this.onChange.bind(this);
+
+    // firebaseRef.once('value', (fbSnapshot) => {
+    //   let messages = fbSnapshot.value();
+    //   this.setState({ messages });
+    // });
+
+    // firebaseRef.on('value', (snapshot) => {  // once || on = Firebase keyword
+    // // "on" listens for changes to the firebase DB value(s).
+    //   let messagesVal = snapshot.val();
+    //   let messages = _(messagesVal).keys().map(messageKey => {
+    //     let clone = _.clone(messagesVal[messageKey]);
+    //     clone.key = messageKey;
+    //     return clone;
+    //   });
+    //   this.setState({ messages });
+    // });
+
+    firebaseRef.on('child_added', (msg) => {
+      if (this.state.messages[msg.key()]){
+        return;
+      }
+
+      let msgVal = msg.val();
+      msgVal.key = msg.key();
+      this.state.messages[msgVal.key] = msgVal;
+      this.setState({  })
+    })
+
+    firebaseRef.on('child_removed', (msg) => {
+      let key = msg.key();
+      delete this.state.messages[key];
+      this.setState({ messages: this.state.messages });
+    })
   }
 
+  onChange(event) {
+    this.setState({ input: event.target.value });
+  }
+
+  onKeyUp(event){
+    event.preventDefault();
+    if (event.keyCode === 13 && trim(event.target.value) !== ''){
+      firebaseRef.push({ message: this.state.message });
+      this.setState({ message: '' });
+    }
+  }
 
   render() {
+    // let messageNodes = this.state.messages.map((message) => {
+    let messageNodes = _.values(this.state.messages).map((message) => {
+      return (
+        <Message message={message} />
+        <TextInput onChange={this.onChange} />
+      );
+    });
+
     return(
-      let messageNodes = this.state.messages.map( (message) => {
-        return (
-          <Text style={styles.chatMessage} />
-        )
-      })
+      <Card />
     )
   }
 
